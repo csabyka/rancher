@@ -1,0 +1,66 @@
+#cloud-config
+ssh_authorized_keys:
+  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDp4qY4tAc9/jj5g8bASqWexuuzGy2opa2xjwLNUwpoZNmWc/GgvDXJ7i55rSbVZhdzexJtOkEhPgPV4Xun434IFrdLQCiq93VOAcR1dApd5xvNVfCh7O2MaWvxXXcwdm2rFadv/JgJYTTLWOQ52W39HY4N3GmpH0EfB3Jtl1q1Fo+lzclA9edCSzy59hIG0vO6BJYIbVu+dlaEXqt/DphxfPLpnrxB7OJSpvT+E0Cm/kghxWByBHZD0Ns6tPk2h9dJqkb3F1zZC4hJtYCifEFRqodIPplwU7o+LKWfGdFyF7ge6DpPET5uodocAGc0teILBOImN8fOdOdu06gYkLoSi1pkGhPqOdZ5SrCVnGR3T156vFSzXea2TRacj6B+PcienUyK4Wn6jYmpzO3dQmcnCgOLZ1AooEF7hswx4PZZYuwqgx5ujwk2n4v0p7+nVPmFgOb2zvSxS5pyd7lpKZ8Is0jiwR0kM6uvJhH8NhxOwGzfCgo0FXutuuObB/ZUq/gC7u5LPOb0LlHwPkp34tudllQP0vBZ/c4/yatdmewFjPXrMWgl29UWcP5Z3iqkf3pQKJF55IU+m2QgZW1Ejf1rwiYYLkMhF/7DRCwv0F7WQtQH6LnQyAsvWbeOXKONEtHqNdo/ued8Fb6JKkO/dHeQR92LEch3aSyxfLIAIBqNkw== ajcollett@DESKTOP-B1KCC4L
+  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCnwOK/C+VbXnUEvvbNt1cZR7kOO/Q18JfCp8e4JArehaVc+psxt9yUMRvztzUcEcHalofYsbfd3PDlKIrcoJFjcpi4Zhm3YQmJqbF9lVHR7aDrUWwV6i3VGVWKgQtPj4VeswOZrz2Yd1Z5/1r9PLOdQEDb4kBmw6S54k78ESFZeCZGmeOJz/9KDm5tWfKAXeDAlAFzecntR9xrDmIhIXD+RS7aa2loT7Fp4pUBFZl2MfFqbbrhN3/OaLxaTPPW9Ih7iLBIlAgR7FRN5WqWwplzNqqtQ0aUtA6v903b9xNy0vZ1V/TW1VzTZHlU7VwwcgBz0t1LwP6q5E7HRTYFdH+h ajcollett@ajcollett-usb.sun.ac.za
+  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC/6coT2yXKXWIpBDB4awl4Sb/SVrXmA7E7eK7XTNm85Tid18eL2aD8Dj+RnHK8rX3nQAZ7+rgszXoSvQ0+X+uWksMBW5mb0ed+eoBemy4sfqyfHfnst0h8oHxNEXWaDU4Ehhg6TnowiPqUh2VqNyrxrq8I6EFlogb8k5Dl0FymoBHabHrXVPCSlZCsHv3oXckxgPGqgFqAzZpZZgZ3XHCySBJ0tCHnsg5DWzMpVDQqFk5vFZooEISStd0tv09sHZxBmmpWsYCtPOjRdo6uZCRoPVcuyc6oMgzBEdsivfLoOg33rnFENsaIxLhWU2HJz9oS2IKXIopuSwNUx9YOwYrUCmSuYDoi2d9Qs7r0q29hXFsmudA9kMapzwM6IkoezbCsvE2KAmJH+yP9KRCmEuXIb1lXdT0j03oFHx5TsW79ZeDK0NWWPGlUKidkI04ceO4Pe024FX0nTyciTbb3PZyVCIKcrnME3JgXl1jSK71bkwyfkwxz6i5l9vwUcijnafAwSfoXsdkciDyo+0kNUrUwk71wP51Nxx9pDuVCp3xcDE1pvD3ajsy08l9nv7ngWYeEJprURWGLR9t6XkcuJLSVewn+dnQEe6qLAFF5vIFVO1Pp7feMHjRJ000NvXLgDJDf3UnbUvVQ0+gYrNADFVxHfnm3MMmzaT17qXepQVKiSw== andrew@VM-server
+  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDFt5RIlVezDww+yL/s3+jhgAHG6FFdQFzmxcZoB1RWEc7DmKvLPWaQAIJOwmrnYKw2BxG4cOpb3qDXoouQg+jVT5R65Y+G1N8uuilPlOh9JUTtCREClwsdAmabNTrUnmg3/wU7eAZVQylBBYdXNalY0cOKy/Sb+XpMGL6aGvZFxjnT8thIpEiz3VgiquKdTpoKIHvyCw/r0h3tYVvZLMFd7WSeYSXbHGZn/TQk3Qn8yavLVyuLr2N7q/HiX395IrcLDzSAYHbVCKyjIN0uJjIWG+5dvNa1UnmWchSmMiaX/7TN8es0zctoAdzWxSfgqMtJiUfae0ylz+G1muktiPPd jacogeld@gmail.com
+rancher:
+  # services_include:
+  #   kernel-headers-system-docker: true
+  #   open-iscsi: true
+  network:
+    # https_proxy: https://146.232.213.32:3128
+    # http_proxy: http://146.232.213.32:3128
+    # no_proxy: localhost,127.0.0.1,git.cs.sun.ac.za,146.232.212.66,146.232.212.110,146.232.212.117,146.232.212.128,ntp.sun.ac.za
+    dns:
+      nameservers:
+        - 146.232.20.10
+        - 146.232.20.11
+      search:
+        - sun.ac.za
+        - stb.sun.ac.za
+        - tyg.sun.ac.za
+        - rga.stb.sun.ac.za
+        - belpark.sun.ac.za
+        - mswf.sun.ac.za
+  docker:
+    engine: docker-17.03.2-ce
+    registry_mirror: "https://git.cs.sun.ac.za:5001"
+  bootstrap_docker:
+    registry_mirror: "https://git.cs.sun.ac.za:5001"
+  system_docker:
+    registry_mirror: "https://git.cs.sun.ac.za:5001"
+    
+#cloud-config
+write_files:
+  - content: |+
+      #!/bin/bash
+      echo "this was a triumph" > /tmp/foo.txt
+      # sleep 300
+      # iscsiadm ...
+    owner: root
+    path: /etc/rc.local
+    permissions: "0755"
+  - path: /etc/ntp.conf
+    permissions: "0644"
+    owner: root
+    content: |
+        disable monitor
+        restrict default kod nomodify notrap nopeer noquery
+        restrict -6 default kod nomodify notrap nopeer noquery
+        restrict 127.0.0.1
+        restrict -6 ::1
+        server ntp.sun.ac.za iburst
+        driftfile /var/lib/ntp/drift
+  - container: ntp
+    path: /etc/ntp.conf
+    permissions: "0644"
+    owner: root
+    content: |
+        disable monitor
+        restrict default kod nomodify notrap nopeer noquery
+        restrict -6 default kod nomodify notrap nopeer noquery
+        restrict 127.0.0.1
+        restrict -6 ::1
+        server ntp.sun.ac.za iburst
+        driftfile /var/lib/ntp/drift
