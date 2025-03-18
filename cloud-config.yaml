@@ -2,15 +2,13 @@
 ssh_authorized_keys:
   - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDYz4qR+EHjiUauakIjwCQOCDRAVnEWZSaB8lA9MeG+b5wrAFcTn7okLqoqiYY0JQL3d2JsI1rdy8he+pgxY0/Yl93XdwP00gZMuCtMb/18kxMv/3T1OmcQmIn7N+pEJzkgk8qPSjS3OAGfVzaHtJoh3Eae4R9ZZfH6Fn/Vqs0u/dOpeJdSxbKgvTezR7rr8tsAppMeuOmwR8hrh6tf58P701YfaR33wBKrnXAo/Eo9r68LjnJvo1yCDXMWr7PTyiaD7Ri2L6deUKrkX8RYJ87PVOhCURuAPMCmuegcITK1krnUjLYC/EX01212X9jLkBzC8i4u+bCpiC/wMD+aj5+p
 rancher:
-  network:
     interfaces:
-      dhcp: true
-  network:
-    # https_proxy: https://146.232.213.32:3128
-    # http_proxy: http://146.232.213.32:3128
-    # no_proxy: localhost,127.0.0.1,git.cs.sun.ac.za,146.232.212.66,146.232.212.110,146.232.212.117,146.232.212.128,ntp.sun.ac.za
+      eth0:
+        mtu: 1500
+        dhcp: true
     dns:
       nameservers:
+        - 10.43.0.10
         - 1.1.1.1
         - 8.8.8.8
       search:
